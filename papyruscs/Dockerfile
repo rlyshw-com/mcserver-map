@@ -10,5 +10,6 @@ RUN wget https://github.com/papyrus-mc/papyruscs/releases/download/v0.5.0/papyru
 RUN unzip *.zip
 RUN chmod +x PapyrusCs
 COPY entrypoint.sh /papyruscs/entrypoint.sh
+RUN chmod +x /papyruscs/entrypoint.sh
 
 ENTRYPOINT ["/papyruscs/entrypoint.sh"]
